@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background-color: #F7F7F7;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.search-section{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #6C63FF;
+  width: 595px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.search-section input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  width: 95%;
+}
+
+select{
+  width: 80px;
+  display: inline-block;
+  padding: 10px;
+  outline: none;
+  background-color: #6C63FF;
+  color: white;
+  border-radius: 5px;
+}
+
+.to-do-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.list-item div{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item p{
+  font-weight: 700;
+}
+
+input[type="checkbox"] {
+  appearance: none; 
+  width: 25px;
+  height: 25px;
+  border: 2px solid #6C63FF;
+  background-color: #F7F7F7;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #6C63FF; 
+}
+
+input[type="checkbox"]:checked::before {
+  content: '✔'; 
+  color: #F7F7F7;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.line{
+  width: 520px;
+  height: 1px;
+  background-color: #6C63FF;
+  margin: 20px 0;
+}
+
+.icons-in-hover{
+  opacity: 0;
+}
+
+.selected{
+  font-weight: 700;
+  text-decoration: line-through;
+  opacity: 0.5;
+}

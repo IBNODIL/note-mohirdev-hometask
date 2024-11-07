@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>TODO LIST</h2>
+
+    <div class="search">
+      <div class="search-section">
+        <input type="text" placeholder="Search note...">
+
+        <img src="./images/search-icon.svg" alt="search icon">
+      </div>
+
+      <select>
+        <option>ALL</option>
+        <option>DONE</option>
+        <option>NOT DONE</option>
+      </select>
+    </div>
+
+    <div class="to-do-list">
+      <div class="list-item"  id="note-1">
+        <div>
+          <input id="note-1-checkbox" type="checkbox">
+
+          <p id="note-1-text">NOTE #1</p>
+        </div>
+
+        <div id="note-1-icons" class="icons-in-hover">
+          <img src="./images/edit-icon.svg" alt="edit icon">
+          <img src="./images/delete-icon.svg" alt="delete icon">
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="list-item"  id="note-2">
+        <div>
+          <input id="note-2-checkbox" type="checkbox">
+
+          <p id="note-2-text">NOTE #2</p>
+        </div>
+
+        <div id="note-2-icons" class="icons-in-hover">
+          <img src="./images/edit-icon.svg" alt="edit icon">
+          <img src="./images/delete-icon.svg" alt="delete icon">
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="list-item"  id="note-3">
+        <div>
+          <input id="note-3-checkbox" type="checkbox">
+
+          <p id="note-3-text">NOTE #3</p>
+        </div>
+
+        <div id="note-3-icons" class="icons-in-hover">
+          <img src="./images/edit-icon.svg" alt="edit icon">
+          <img src="./images/delete-icon.svg" alt="delete icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
